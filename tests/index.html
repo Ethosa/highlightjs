@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <pre><code class="language-nim">
+# This Nim code generates a random list of integers,
+# calculates their sum and average, and then filters
+# the list to keep only the numbers greater than the average.
+
+import math, random
+
+# Function to generate a random list of integers
+proc generateRandomList(size: int): seq[int] =
+  result = newSeq[int](size)
+  for i in 0..&lt;size:
+    result[i] = random(100)
+
+# Function to calculate the sum of a list
+proc calculateSum(numbers: seq[int]): int =
+  result = 0
+  for num in numbers:
+    result += num
+
+# Function to calculate the average of a list
+proc calculateAverage(numbers: seq[int]): float =
+  result = 0.0
+  if len(numbers) > 0:
+    result = float(calculateSum(numbers)) / float(len(numbers))
+
+# Function to filter numbers greater than the average
+proc filterNumbersAboveAverage(numbers: seq[int], average: float): seq[int] =
+  result = @[]
+  for num in numbers:
+    if num > average:
+      result.add(num)
+
+# Main procedure
+proc main() =
+  let size = 10
+  let randomList = generateRandomList(size)
+  
+  echo "Random List:", randomList
+
+  let sum = calculateSum(randomList)
+  echo "Sum:", sum
+
+  let average = calculateAverage(randomList)
+  echo "Average:", average
+
+  let filteredList = filterNumbersAboveAverage(randomList, average)
+  echo "Numbers above Average:", filteredList
+
+# Run the main procedure
+main()
+    </code></pre>
+    <script src="test.js"></script>
+  </body>
+</html>
