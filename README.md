@@ -1,9 +1,9 @@
-<div>
+<div align="center">
 
 # highlightjs.nim
 
-### [highlight.js](https://highlightjs.org/) for Nim
-### [API Reference](https://ethosa.github.io/highlightjs/highlightjs.html)
+#### [highlight.js](https://highlightjs.org/) for Nim
+#### [API Reference](https://ethosa.github.io/highlightjs/highlightjs.html)
 
 </div>
 
