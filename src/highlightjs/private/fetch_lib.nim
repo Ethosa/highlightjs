@@ -1,8 +1,7 @@
 import
   dom,
   macros,
-  strutils,
-  tables
+  strutils
 
 
 const
@@ -19,7 +18,7 @@ proc emitJs(code: string): NimNode {.compileTime.} =
   )
 
 
-proc fetchFromUrl(url: string, output: string = "output.txt"): string {.compileTime.} =
+proc fetchFromUrl(url: string): string {.compileTime.} =
   let data = gorgeEx("curl -N -s " & url)
   return data.output
 
