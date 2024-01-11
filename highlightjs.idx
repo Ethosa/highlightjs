@@ -1,0 +1,11 @@
+nimTitle	highlightjs	highlightjs.html	module src/highlightjs		0
+nim	HighlightJs	highlightjs.html#HighlightJs	type HighlightJs		18
+nim	HighlightResult	highlightjs.html#HighlightResult	object HighlightResult		19
+nim	hljs	highlightjs.html#hljs	var hljs		27
+nim	highlight	highlightjs.html#highlight,,cstring,cstring,bool	proc highlight(self: HighlightJs; code: cstring; language: cstring = "nim";\n          ignoreIllegals: bool = false): HighlightResult		34
+nim	highlightElement	highlightjs.html#highlightElement,,Element	proc highlightElement(self: HighlightJs; elem: Element)		52
+nim	highlightAll	highlightjs.html#highlightAll	proc highlightAll(self: HighlightJs)		59
+nim	newInstance	highlightjs.html#newInstance	proc newInstance(self: HighlightJs): HighlightJs		66
+nim	configure	highlightjs.html#configure,,cstring,cstring,bool,bool	proc configure(self: HighlightJs; classPrefix: cstring = "";\n          cssSelector: cstring = "pre code"; ignoreUnescapedHTML: bool = true;\n          throwUnescapedHTML: bool = false)		71
+nim	debugMode	highlightjs.html#debugMode	proc debugMode(self: HighlightJs)		101
+heading	Highlight.js	highlightjs.html#highlightdotjs	 Highlight.js		0
