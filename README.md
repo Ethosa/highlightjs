@@ -14,8 +14,9 @@
 
 
 ## Flags
-| Flag                                 | Description                                  | Default    |
-| :--                                  | :--                                          | :--:       |
-| `-d:hljsv="11.9.0"`                  | Choose other highlight.js version            | `"11.9.0"` |
-| `-d:hljs_langs="nim,json,go,python"` | Choose additional languages separated by "," | `"nim"`    |
-| `-d:no_i_hljs`                       | Disable automatic including cdn library      | `false`    |
+| Flag                                 | Description                                  | Default     |
+| :--                                  | :--                                          | :--:        |
+| `-d:hljsv="11.9.0"`                  | Choose other highlight.js version            | `"11.9.0"`  |
+| `-d:hljs_theme="tokyo-night-dark"`   | Choose highlight.js theme                    | `"default"` |
+| `-d:hljs_langs="nim,json,go,python"` | Choose additional languages separated by "," | `"nim"`     |
+| `-d:no_i_hljs`                       | Disable automatic including cdn library      | `false`     |

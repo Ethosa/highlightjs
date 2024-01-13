@@ -7,6 +7,7 @@ import
 const
   hljs_langs {.strdefine.} = "nim,json"
   hljsv {.strdefine.} = "11.9.0"
+  hljs_theme {.strdefine.} = "default"
 
 
 proc emitJs(code: string): NimNode {.compileTime.} =
@@ -25,7 +26,7 @@ proc fetchFromUrl(url: string): string {.compileTime.} =
 
 macro fetch() =
   var cssData = fetchFromUrl(
-    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/" & hljsv & "/styles/default.min.css"
+    "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/" & hljsv & "/styles/" & hljs_theme & ".min.css"
   )
   var mainJsData = fetchFromUrl(
     "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@" & hljsv & "/build/highlight.min.js"
